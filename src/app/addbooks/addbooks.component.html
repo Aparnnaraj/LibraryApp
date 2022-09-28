@@ -1,1 +1,31 @@
-<p>addbooks works!</p>
+<div class="container">
+    <form #addcourse="ngForm" (ngSubmit)="addbooks_f()">
+        <div class="form-group">
+            <label>Book Title</label>
+            <input type="text" class="form-control" name="title" [(ngModel)]="books.title">
+        </div>
+
+        <div class="form-group">
+            <label>Book Author</label>
+            <input type="text" class="form-control" name="description" [(ngModel)]="books.author">
+        </div>
+
+        <div class="form-group">
+            <label>Book Status</label>
+            <input type="text" class="form-control" name="venue" [(ngModel)]="books.status">
+        </div>
+
+        <div class="form-group">
+            <label>Book Duedate</label>
+            <input type="date" class="form-control" name="duration" [(ngModel)]="books.duedate">
+        </div>
+
+        
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+
+    </form>
+</div>
+
+
