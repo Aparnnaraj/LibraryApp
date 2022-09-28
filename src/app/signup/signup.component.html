@@ -1,0 +1,52 @@
+<section class="vh-90" style="margin-top:95px;margin-bottom:95px">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+            class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form class="form" [formGroup]="signupForm">
+  
+            <!-- name input -->
+            <div class="form-group">
+              <label  >Full Name</label>
+              <input type="Name" id="fname" FormControlName="fname" class="form-control form-control-lg"/>
+              
+            </div>
+  
+            <!-- email input -->
+            <div class="form-group">
+              <label >Valid E-mail ID</label>
+              <input type="e-mail" id="email" FormControlName="email" class="form-control form-control-lg"/>
+              
+            </div>
+  
+            <div class="form-group">
+              <label >Password</label>
+              <input type="password" id="password" FormControlName="password" class="form-control form-control-lg" />
+              
+            </div>
+  
+           
+  
+            <div class="form-group">
+              <label>Mobile No.</label>
+              <input type="Mobile No." id="mobile" FormControlName="mobile" class="form-control form-control-lg" />
+              
+            </div>
+  
+           
+  
+          <div class="form-group">
+              <button type="button" class="btn btn-primary btn-lg" type="submit"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;"[disabled]="signupForm.invalid"> Submit </button><a routerLink="/booklist"></a>
+              
+            </div>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
